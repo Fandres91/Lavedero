@@ -1,1 +1,5 @@
 nombre:'pedro',
+apellido: 'Santos',
+nit: 'nit',
+telefono: 'telefono',
+direccion: 'cra.',

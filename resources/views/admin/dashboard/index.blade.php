@@ -3,7 +3,7 @@
 
 <section class="content-header">
       <h1>
-        Dashboard
+       Principal
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
