@@ -1,6 +1,5 @@
 nombre:null,
-nit: null,
+cedula: null,
 telefono: null,
-direccion: null,
-razon_social: null,
+correo: null,
 token: "{!!csrf_token()!!}",

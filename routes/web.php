@@ -19,6 +19,16 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/admin/perfil', 'perfil_controller@index')->name('home');
-Route::get('/admin/perfil', [
-    'as' => 'perfil', 'uses' => 'perfil_controller@index'
-]);
+Route::get('/admin/perfil', 'perfil_controller@index')->name('perfil');
+Route::get('/admin/contratista', 'contratista_controller@index')->name('contratista');
+Route::get('/admin/servicio', 'servicio_controller@index')->name('servicio');
+
+
+
+// --------------------------------------------API
+//---------------------------------------------Perfil
+Route::post('/admin/perfil/store', 'perfil_controller@store');
+//---------------------------------------------contratista
+Route::post('/admin/contratista/store', 'contratista_controller@store');
+//---------------------------------------------servicio
+Route::post('/admin/servicio/store', 'servicio_controller@store');

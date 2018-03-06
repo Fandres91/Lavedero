@@ -1,15 +1,12 @@
 guardar:function()
 {
 	
-var ruta = "/admin/perfil/store"
+var ruta = "/admin/servicio/store"
 	        var vector = {};
 	        vector.id = this.id;
-	        vector.nombre = this.nombre;
-	        vector.nit = this.nit;
-	        vector.telefono = this.telefono;
-	        vector.razon_social = this.razon_social;
-	        vector.direccion = this.direccion;
-	       
+	        vector.nombre_servicio = this.nombre_servicio;
+	        vector.valor = this.valor;
+	        vector.id_tipo_servicio = this.id_tipo_servicio;
 	        
 	        
 	        $.ajax({
@@ -29,3 +26,4 @@ var ruta = "/admin/perfil/store"
 	            }
 	        });
 }
+

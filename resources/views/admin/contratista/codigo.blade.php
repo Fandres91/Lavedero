@@ -1,14 +1,14 @@
 guardar:function()
 {
 	
-var ruta = "/admin/perfil/store"
+var ruta = "/admin/contratista/store"
 	        var vector = {};
 	        vector.id = this.id;
 	        vector.nombre = this.nombre;
-	        vector.nit = this.nit;
+	        vector.cedula = this.cedula;
 	        vector.telefono = this.telefono;
-	        vector.razon_social = this.razon_social;
-	        vector.direccion = this.direccion;
+	        vector.correo = this.correo;
+	        
 	       
 	        
 	        

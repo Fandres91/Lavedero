@@ -1,6 +1,6 @@
 <section class="content-header">
       <h1>
-       @{{ apellido }}
+      
         <small>@{{nombre}}</small>
       </h1>
       <ol class="breadcrumb">
@@ -24,42 +24,42 @@
             <form role="form">
               <div class="box-body">
                 <div class="form-group">
-                  <label for="nombre">Nombre:</label>
+                  <label>Nombre:</label>
                   <input type="text" class="form-control" v-model="nombre" id="nombre" placeholder="Nombre del empresa">
                 </div>
                 <div class="form-group">
-                  <label for="nit">Nit:</label>
+                  <label>Nit:</label>
                   <input type="text" class="form-control" v-model="nit" id="nit" placeholder="Nit de la empresa">
                 </div>
 
                 <div class="form-group">
-                  <label for="razonSocial">Razón social:</label>
-                  <input type="text" class="form-control" v-molde="razonSocial" id="razonSocial" placeholder="Razón social de la empresa">
+                  <label>Razon Social:</label>
+                  <input type="text" class="form-control" v-model="razon_social" id="razon_social" placeholder="Nombre del empresa">
                 </div>
 
                 <div class="form-group">
-                  <label for="direccion">Dirección:</label>
+                  <label>Dirección:</label>
                   <input type="text" class="form-control" id="direccion" v-model="direccion" placeholder="Dirección de la empresa">
                 </div>
 
                 <div class="form-group">
-                  <label for="telefono">Telefono:</label>
+                  <label>Telefono:</label>
                   <input type="text" class="form-control" id="telefono" v-model="telefono" placeholder="Dirección de la empresa">
                 </div>
-                
+                <!--
                 <div class="form-group">
                   <label for="exampleInputFile">Imagen logo</label>
                   <input type="file" id="exampleInputFile">
 
                   <p class="help-block">Logo de la empresa</p>
-                </div>
+                </div>-->
                 
               </div>
-              <!-- /.box-body -->
+             
 
               <div class="box-footer">
 
-                <button @click="guardar" type="submit" class="btn btn-primary"><span class="fa fa-save"></span> Registrar</button>
+                <button @click="guardar" type="button" class="btn btn-primary"><span class="fa fa-save"></span>Registrar</button>
               </div>
             </form>
           </div>
@@ -88,11 +88,8 @@
            
             </table>
           </div>
-          <!-- /.box -->
-          <!-- general form elements disabled -->
-          
-          <!-- /.box -->
         </div>
+         
         <!--/.col (right) -->
       </div>
       <!-- /.row -->
