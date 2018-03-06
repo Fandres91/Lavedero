@@ -12,11 +12,9 @@ class contratista_controller extends Controller
     }
     public function store(Request $r)
     {
-    	$contratista= \App\contratista::find(1);
-    	if(!$contratista)
-    	{
+    	
     		$contratista= new \App\contratista;
-    	}
+    	
     	$contratista->nombre=$r->nombre;
     	$contratista->cedula=$r->cedula;
     	$contratista->telefono=$r->telefono;

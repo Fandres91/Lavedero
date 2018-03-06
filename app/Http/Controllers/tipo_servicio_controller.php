@@ -10,15 +10,14 @@ class tipo_servicio_controller extends Controller
     {
     	return view('admin.tipo_servicio.index');
     }
-    public function store(Request $r)
+    public function store2(Request $r)
     {
-    	$tipo_servicio= \App\tipo_servicio::find(1);
-    	if(!$tipo_servicio)
-    	{
-    		$tipo_servicio= new \App\tipo_servicio;
-    	}
-    	$tipo_servicio->nombre_tipo=$r->nombre_tipo;    	
+    	
+    	
+    	$tipo_servicio= new \App\tipo_servicio;
+    	
+    	$tipo_servicio->nombre_tipo= $r->nombre_tipo;    	
     	$tipo_servicio->save();
     	return response()->json(['mensaje'=>'ok']);
-    
+    }
 }

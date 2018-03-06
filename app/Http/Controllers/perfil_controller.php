@@ -13,7 +13,7 @@ class perfil_controller extends Controller
     public function store(Request $r)
     {
     	$perfil= \App\perfil::find(1);
-    	if(!$perfil)
+    	if($perfil)
     	{
     		$perfil= new \App\perfil;
     	}

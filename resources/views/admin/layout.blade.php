@@ -198,10 +198,11 @@
           </a>     
         </li>
         <li>
-           <a href="/admin/servicio">
+           <a href="{{url('/admin/servicio')}}">
             <i class=" fa fa-suitcase"></i> <span>Servicios</span>                 
           </a>     
-        </li>     
+        </li>
+
       </ul>
     </section>
     <!-- /.sidebar -->
