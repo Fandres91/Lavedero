@@ -28,8 +28,17 @@ Route::get('/admin/servicio', 'servicio_controller@index')->name('servicio');
 // --------------------------------------------API
 //---------------------------------------------Perfil
 Route::post('/admin/perfil/store', 'perfil_controller@store');
+Route::get('/admin/perfil/update','perfil_controller@update');
+//Route::get('/admin/perfil/{id}/eliminar','perfil_controller@eliminar');
+Route::get('perfil/{id}/eliminar',[
+			'uses' => 'perfil_controller@eliminar',
+			'as' => 'admin.perfil.eleminar'
+]);
+
 //---------------------------------------------contratista
 Route::post('/admin/contratista/store', 'contratista_controller@store');
 //---------------------------------------------servicio
 Route::post('/admin/servicio/store', 'servicio_controller@store');
 Route::post('/admin/servicio/store2', 'tipo_servicio_controller@store2');
+
+

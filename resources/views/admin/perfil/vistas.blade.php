@@ -8,8 +8,6 @@
         <li class="active">adasdas</li>
       </ol>
     </section>
-
-
     <section class="content">
       <div class="row">
         <!-- left column -->

@@ -182,16 +182,21 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Menú Principal</li>
-        <li >
+         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>               
+            <i class="fa fa-dashboard"></i> <span>Perfil</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
           </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="/admin/perfil">
+            <i class="fa fa-building-o"></i> <span>Crear</span></a></li>
+            <li><a href="/admin/perfil/update">
+            <i class="fa  fa-edit"></i> <span>Actualizar</span></a></li>
+          </ul>
         </li> 
-        <li>
-           <a href="/admin/perfil">
-            <i class="fa fa-building-o"></i> <span>Perfil</span>                 
-          </a>     
-        </li>
+        
         <li>
            <a href="/admin/contratista">
             <i class="fa fa-user-plus"></i> <span>Contratista</span>                 
@@ -214,7 +219,7 @@
                                      yield
 .......................................................................
 -->
-
+  @yield('title')
     @yield('content')
     
   </div>

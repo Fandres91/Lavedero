@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class contratista extends Model
 {
-    protected $table = "contratistas";
+    protected $table = "contratista";
 
     protected $fillable = ['nombre', 'cedula', 'telefono', 'correo'];
 }
