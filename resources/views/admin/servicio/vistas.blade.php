@@ -19,9 +19,53 @@
             <div class="box-header with-border">
               <h3 class="box-title">Registro tipo de servicio</h3>
             </div>
-            <!-- /.box-header -->
-            <!-- form start -->
-            <form role="form">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-servicio">
+               Registrar tipo
+              </button>
+
+              <template>
+                <b-table striped hover :items="items"></b-table>
+              </template>
+
+
+
+
+        <!-- Item Listing -->
+    <table class="table table-bordered">
+      <tr>
+        <th>Nombre:</th>
+        
+      </tr>
+      <tr v-for="tipo in tipo_servicio">
+        <td>@{{ tipo.nombre_servicio }}</td>
+       <td></td>
+        <td>  
+            <button class="btn btn-primary" @click.prevent="editItem(item)">Edit</button>
+            <button class="btn btn-danger" @click.prevent="deleteItem(item)">Delete</button>
+        </td>
+      </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+              
+          <!--modal -->
+          <div class="modal fade" id="modal-servicio">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Registro</h4>
+              </div>
+              <div class="modal-body">
+                <form role="form">
               <div class="box-body">
                 <div class="form-group">
                   <label>Nombre:</label>
@@ -31,11 +75,22 @@
               </div>
              
 
-              <div class="box-footer">
-
-                <button @click="guardar_tipo" type="button" class="btn btn-primary"><span class="fa fa-save"></span> Registrar</button>
-              </div>
             </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cerrar</button>
+                <button @click="guardar_tipo"  type="button" class="btn btn-primary">Guardar</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+
+
+           
           </div>
           
         </div>
@@ -48,8 +103,20 @@
             <div class="box-header with-border">
               <h3 class="box-title">Registro de servicio</h3>
             </div>
-            
-            <form role="form">
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-tipo">
+               Registrar tipo
+            </button>
+            <!--..............................modal....................-->
+            <div class="modal fade" id="modal-tipo">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Default Modal</h4>
+              </div>
+              <div class="modal-body">
+                <form role="form">
               <div class="box-body">
                 <!--
                 <div class="form-group">
@@ -80,11 +147,23 @@
               </div>
              
 
-              <div class="box-footer">
-
-                <button @click="guardar" type="button" class="btn btn-primary"><span class="fa fa-save"></span> Registrar</button>
-              </div>
+              
             </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <button @click="guardar" type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+
+
+            
           </div>
         </div>
          
@@ -92,3 +171,6 @@
       </div>
       <!-- /.row -->
     </section>
+    <script type="text/javascript">
+      
+    </script>

@@ -34,6 +34,6 @@ class perfil_controller extends Controller
     public function eliminar($id)
     {   
        $perfil = perfil::find($id);
-       $user->delete();
+       $perfil->delete();
     }
 }

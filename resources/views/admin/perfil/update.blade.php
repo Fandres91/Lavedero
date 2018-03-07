@@ -21,7 +21,7 @@
             <td> {{ $perfil->nit }} </td>
             <td> {{ $perfil->razon_social }} </td>
             <td> {{ $perfil->telefono }} </td>
-            <td> <a href="" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> </a> <a href="{{ route('admin.perfil.eliminar', $perfil->id) }}" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> </a></td>
+            <td> <a href="" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> </a> <a href="/{{$perfil->id}}/eliminar" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> </a></td>
           </tr>
           @endforeach
         </tbody>

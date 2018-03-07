@@ -29,6 +29,9 @@
   <link rel="stylesheet" href="/template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <!-- Select2 -->
   <link rel="stylesheet" href="/template/bower_components/select2/dist/css/select2.min.css">
+<!-- Add this to <head> -->
+
+<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
 
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -81,9 +84,30 @@
 <script src="/template/dist/js/demo.js"></script>
 <!-- Select2 -->
 <script src="/template/bower_components/select2/dist/js/select2.full.min.js"></script>
+<script>
+const items = [
+  { isActive: true, age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
+  { isActive: false, age: 21, first_name: 'Larsen', last_name: 'Shaw' },
+  { isActive: false, age: 89, first_name: 'Geneva', last_name: 'Wilson' },
+  { isActive: true, age: 38, first_name: 'Jami', last_name: 'Carney' }
+]
 
+export default {
+  data () {
+    return {
+      items: items
+    }
+  }
+}
+</script>
 
 <script src="/js/vue.js"></script>
+
+
+<!-- Add this after vue.js -->
+<script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+<script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
